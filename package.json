@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "tessellate",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Best-Domain-Registered-With-Domain-com/tessellate2#readme",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
