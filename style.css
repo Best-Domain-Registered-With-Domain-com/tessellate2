@@ -1,4 +1,4 @@
-Skip to content
+/* Skip to content
 Search or jump to…
 
 Pull requests
@@ -32,8 +32,10 @@ Latest commit d4a5463 on Jun 8, 2019
  History
  1 contributor
 85 lines (72 sloc)  1.24 KB
-  
-*, *::before, *::after {
+   */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Gotham Rounded;
 }
