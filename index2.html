@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-social/bootstrap-social.css"
+    />
     <!-- <link href="style.css" rel="stylesheet" /> -->
     <link href="style.css" rel="stylesheet" />
     <title>Tessellate</title>
@@ -22,85 +34,47 @@
       </header>
       
 
-<div class="container">
-<div class="slideshow-container">
-<div class="mySlides1">
-  <img src="images/bridge-memes/bid-meme.gif" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">When you don't know what partner's bid means</div>
-    </div>
-    <div class="middle">
-      <div class="text">1/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/Gru-with-opening-hand.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">Gru with Opening Hand</div>
-    </div>
-    <div class="middle">
-      <div class="text">2/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/Stayman-bridge-meme.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">Stayman</div>
-    </div>
-    <div class="middle">
-      <div class="text">3/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/endgame-portal-meme.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">3NT without a club stopper</div>
-    </div>
-    <div class="middle">
-      <div class="text">4/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/Bridge-Meme-Length-not-Strength.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">Length not strength</div>
-    </div>
-    <div class="middle">
-      <div class="text">5/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/3nt-meme.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">Why play 3 clubs when you could just play 3NT?</div>
-    </div>
-    <div class="middle">
-      <div class="text">6/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/suprised-pikachu-meme.jpg" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">When you aren't paying attention on Bridge Base</div>
-    </div>
-    <div class="middle">
-      <div class="text">7/8</div>
-    </div>
-  </div>
-<div class="mySlides1">
-  <img src="images/bridge-memes/sandefur-vs-pink-guy-meme.png" alt="Avatar class="image" style="width:100%">
-    <div class="middle2">
-      <div class="text">When you play vs. the professors</div>
-    </div>
-    <div class="middle">
-      <div class="text">6/8</div>
-    </div>
-  </div>
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-</div>
-</div>
-
+      <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Have you reached out to someone close to you today?</h2>
+                                <h4>It won't be as awkward as you think</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Have you been on your computer for a while?</h2>
+                                <h4>Try taking a break, especially if it's almost time to hit the hay</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>$GME TO THE MOON</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-t="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href=#mycarousel role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href=#mycarousel role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </div>
 
 <br></br><br></br>
       <div class="container">

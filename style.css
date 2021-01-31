@@ -179,8 +179,13 @@ body {
   border-bottom: 1px solid #48484e;
   padding: 10px;
 }
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -191,7 +196,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 100px;
@@ -213,24 +219,23 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #f1f1f1;
   color: black;
 }
-
-
 
 .image {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .01s ease;
+  transition: 0.01s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .01s ease;
+  transition: 0.01s ease;
   opacity: 0;
   position: absolute;
   top: 110%;
@@ -241,7 +246,7 @@ img {vertical-align: middle;}
 }
 
 .middletwo {
-  transition: .01s ease;
+  transition: 0.01s ease;
   opacity: 0;
   position: absolute;
   top: 100%;
@@ -259,3 +264,86 @@ img {vertical-align: middle;}
   opacity: 1;
 }
 
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #d1c4e9;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #4197d2;
+  color: floralwhite;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background-color: #4197d2;
+}
+
+.navbar-dark {
+  background-color: #183549;
+}
+
+.tab-content {
+  border-left: 1px solid #48484e;
+  border-right: 1px solid #48484e;
+  border-bottom: 1px solid #48484e;
+  padding: 10px;
+}
+
+.carousel {
+  background: #183549;
+}
+.carousel .carousel-item {
+  height: 300px;
+}
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+.carousel .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.modal .modal-header {
+  background-color: #183549;
+  color: floralwhite;
+}
+.modal .modal-header .close {
+  color: floralwhite;
+}
+
+.modal .modal-body {
+  background-color: #d1c4e9;
+}
