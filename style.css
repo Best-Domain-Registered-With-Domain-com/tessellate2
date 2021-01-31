@@ -107,6 +107,10 @@ body.wrong {
   --hue: var(--hue-wrong);
 }
 
+form {
+  margin: 5px;
+}
+
 .container {
   width: 1200px;
   max-width: 80%;
