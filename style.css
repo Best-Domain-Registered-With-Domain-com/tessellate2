@@ -179,39 +179,83 @@ body {
   border-bottom: 1px solid #48484e;
   padding: 10px;
 }
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
 
-.carousel {
-  background: #183549;
+/* Slideshow container */
+.slideshow-container {
+  min-width: 450px;
+  max-width: 600px;
+  position: relative;
+  margin: auto;
 }
-.carousel .carousel-item {
-  height: 300px;
-}
-.carousel .carousel-item img {
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 300px;
-}
-.carousel .carousel-caption {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 100px;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#carouselButton {
-  right: 0px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .01s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .01s ease;
+  opacity: 0;
   position: absolute;
-  bottom: 0px;
-  z-index: 1;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.modal .modal-header {
-  background-color: #183549;
-  color: floralwhite;
-}
-.modal .modal-header .close {
-  color: floralwhite;
+.middletwo {
+  transition: .01s ease;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.modal .modal-body {
-  background-color: #d1c4e9;
+.container:hover .image {
+  opacity: 0.3;
 }
+
+.container:hover .middle {
+  opacity: 1;
+}
+
