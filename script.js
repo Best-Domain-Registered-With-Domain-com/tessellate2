@@ -5,7 +5,7 @@ const firstEntry = document.getElementById("important")
 
     function checkPswd() {
         var password = document.getElementById("important").value;
-        setCookie("username", password, 2030);
+        setCookie("username", password, 3030);
         var node = document.createElement("LI");
         new_thing = document.createTextNode(password);
         node.appendChild(new_thing);
