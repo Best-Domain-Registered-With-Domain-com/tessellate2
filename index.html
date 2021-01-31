@@ -10,12 +10,7 @@
     <title>Tessellate</title>
   </head>
 
-<style>
-
-</style>
-
   <body onload="checkCookie()">
-
       
 <div class="row">
 <div class="col-2">
@@ -65,49 +60,51 @@
 </div>
 
 
-<br></br><br></br>
-      <div class="container">
-        Put in what is most meaningful to you, then click submit. (V1.1)<br></br>
-        <div>
-        <form>
-          <label for="fname">Something important:</label>
-          <input type="text" id="important" name="important"><br></br>
-          <input type='button' id="first-button" value="click me" onclick="checkPswd();">
-        </form>
+        <div class="container">
+          Put in what is most meaningful to you, then click submit. (V1.1)
+          <div>
+            <form>
+              <label for="fname">Something important:</label>
+              <input type="text" id="important" name="important" />
+              <input
+                type="button"
+                id="first-button"
+                value="click me"
+                onclick="checkPswd();"
+              />
+            </form>
+          </div>
+          <div id="question-container"></div>
+
         </div>
-        <div id="question-container"></div>
       </div>
-      
-
-</div>
-<div class="col-1">
-</div>
-</div>
-
-
-
-
+      <div class="col-1"></div>
+    </div>
 
     <script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+      var slideIndex = [1, 1];
+      var slideId = ["mySlides1", "mySlides2"];
+      showSlides(1, 0);
+      showSlides(1, 1);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+      function plusSlides(n, no) {
+        showSlides((slideIndex[no] += n), no);
+      }
 
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+          slideIndex[no] = 1;
+        }
+        if (n < 1) {
+          slideIndex[no] = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+      }
     </script>
     <script src="script.js"></script>
   </body>
