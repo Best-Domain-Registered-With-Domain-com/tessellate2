@@ -63,6 +63,18 @@ Latest commit d4a5463 on Jun 8, 2019
   font-size: larger;
 }
 
+.header-image {
+  width: 10vw;
+}
+
+.header h1 {
+  font-size: 2vw;
+}
+
+.header p {
+  font-size: 1.5vw;
+}
+
 .remember {
   color: #2989cc;
   font-family: monospace;
@@ -278,7 +290,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 150px;
+  top: 15vh;
   width: auto;
   padding: 16px;
   margin-top: 0px;
@@ -306,8 +318,8 @@ img {
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 36vh;
   transition: 0.01s ease;
   backface-visibility: hidden;
 }
