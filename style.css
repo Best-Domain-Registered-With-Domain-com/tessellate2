@@ -46,26 +46,47 @@ Latest commit d4a5463 on Jun 8, 2019
   --hue-correct: 145;
 }
 
-
 [class*="col-"] {
   float: left;
   padding: 1px;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
 body {
   --hue: var(--hue-neutral);
@@ -133,13 +154,16 @@ body.wrong {
 }
 
 .controls {
-
   justify-content: center;
   align-items: center;
 }
 
 .hide {
   display: none;
+}
+
+.divider {
+  height: 15px;
 }
 
 nav {
@@ -199,8 +223,13 @@ body {
   border-bottom: 1px solid #48484e;
   padding: 10px;
 }
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -211,7 +240,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 200px;
@@ -233,24 +263,23 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #f1f1f1;
   color: black;
 }
-
-
 
 .image {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .01s ease;
+  transition: 0.01s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .01s ease;
+  transition: 0.01s ease;
   opacity: 0;
   position: absolute;
   top: 110%;
@@ -261,7 +290,7 @@ img {vertical-align: middle;}
 }
 
 .middletwo {
-  transition: .01s ease;
+  transition: 0.01s ease;
   opacity: 0;
   position: absolute;
   top: 100%;
@@ -278,4 +307,3 @@ img {vertical-align: middle;}
 .container:hover .middle {
   opacity: 1;
 }
-

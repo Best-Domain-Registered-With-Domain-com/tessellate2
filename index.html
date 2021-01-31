@@ -11,98 +11,99 @@
   </head>
 
   <body onload="checkCookie()">
-    < class="row">
-    <div class="col-2">
-      <header>
-        <img
-          src="logos/logo-blue.png"
-          alt="logo"
-          style="width: 200px; height: 200px"
-          class="inline"
-        />
-        <h1 class="main-title"><a href="index.html">Tessellate</a></h1>
-        <p class="site-description" itemprop="description">
-          form meaningful connections.
-        </p>
-      </header>
-    </div>
-    <div class="col-1"></div>
-    <div class="col-9">
-      <div class="container">
-        <div class="slideshow-container">
-          <div class="mySlides1">
-            <img
-              src="images/inspiration-1.jpeg"
-              alt="Avatar"
-              class="image"
-              style="width: 100%"
-            />
-            <div class="middle2">
-              <div class="text">
-                When you don't know what partner's bid means
+    <div class="row">
+      <div class="col-2">
+        <header>
+          <img
+            src="logos/logo-blue.png"
+            alt="logo"
+            style="width: 200px; height: 200px"
+            class="inline"
+          />
+          <h1 class="main-title"><a href="index.html">Tessellate</a></h1>
+          <p class="site-description" itemprop="description">
+            form meaningful connections.
+          </p>
+        </header>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-9">
+        <div class="container">
+          <div class="slideshow-container">
+            <div class="mySlides1">
+              <img
+                src="images/inspiration-1.jpeg"
+                alt="Avatar"
+                class="image"
+                style="width: 100%"
+              />
+              <div class="middle2">
+                <div class="text">
+                  When you don't know what partner's bid means
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">1/8</div>
               </div>
             </div>
-            <div class="middle">
-              <div class="text">1/8</div>
+            <div class="mySlides1">
+              <img
+                src="images/inspiration-2.jpg"
+                alt="Avatar"
+                class="image"
+                style="width: 100%"
+              />
+              <div class="middle2">
+                <div class="text">Gru with Opening Hand</div>
+              </div>
+              <div class="middle">
+                <div class="text">2/8</div>
+              </div>
             </div>
+            <div class="mySlides1">
+              <img
+                src="images/inspiration-3.jpg"
+                alt="Avatar"
+                class="image"
+                style="width: 100%"
+              />
+              <div class="middle2">
+                <div class="text">Stayman</div>
+              </div>
+              <div class="middle">
+                <div class="text">3/8</div>
+              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
-          <div class="mySlides1">
-            <img
-              src="images/inspiration-2.jpg"
-              alt="Avatar"
-              class="image"
-              style="width: 100%"
-            />
-            <div class="middle2">
-              <div class="text">Gru with Opening Hand</div>
-            </div>
-            <div class="middle">
-              <div class="text">2/8</div>
-            </div>
+        </div>
+        <p class="divider"></p>
+        <div class="container">
+          Type in the name of someone who is important to you, then click
+          Remember.
+          <div>
+            <form>
+              <label for="fname"></label>
+              <input
+                type="text"
+                id="important"
+                name="important"
+                placeholder="Someone important"
+              />
+              <input
+                type="button"
+                id="first-button"
+                value="Remember"
+                onclick="checkPswd();"
+              />
+            </form>
           </div>
-          <div class="mySlides1">
-            <img
-              src="images/inspiration-3.jpg"
-              alt="Avatar"
-              class="image"
-              style="width: 100%"
-            />
-            <div class="middle2">
-              <div class="text">Stayman</div>
-            </div>
-            <div class="middle">
-              <div class="text">3/8</div>
-            </div>
-          </div>
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          <div id="question-container"></div>
         </div>
       </div>
-
-      <div class="container">
-        Type in the name of someone who is important to you, then click
-        Remember.
-        <div>
-          <form>
-            <label for="fname"></label>
-            <input
-              type="text"
-              id="important"
-              name="important"
-              placeholder="Someone important"
-            />
-            <input
-              type="button"
-              id="first-button"
-              value="Remember"
-              onclick="checkPswd();"
-            />
-          </form>
-        </div>
-        <div id="question-container"></div>
-      </div>
+      <div class="col-1"></div>
     </div>
-    <div class="col-1"></div>
 
     <script>
       var slideIndex = [1, 1];
