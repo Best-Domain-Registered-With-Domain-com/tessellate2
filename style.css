@@ -158,7 +158,9 @@ form {
 }
 
 .header {
-  margin-left: 40px;
+  margin-left: 5vw;
+  margin-right: auto;
+  width: 15vw;
 }
 
 .controls {
