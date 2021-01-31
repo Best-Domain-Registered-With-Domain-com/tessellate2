@@ -153,6 +153,10 @@ body.wrong {
   color: black;
 }
 
+.header {
+  margin-left: 40px;
+}
+
 .controls {
   justify-content: center;
   align-items: center;
@@ -223,6 +227,7 @@ body {
   border-bottom: 1px solid #48484e;
   padding: 10px;
 }
+
 .mySlides1,
 .mySlides2 {
   display: none;
