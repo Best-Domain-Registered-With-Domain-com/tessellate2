@@ -46,6 +46,35 @@ Latest commit d4a5463 on Jun 8, 2019
   --hue-correct: 145;
 }
 
+.main-title {
+  /* background-color: #2989cc; */
+  color: #2989cc;
+  padding: 0.2em;
+  text-decoration: none;
+  font-family: fantasy;
+}
+
+.main-subtext {
+  /* background-color: #2989cc; */
+  color: #2989cc;
+  padding: 0.2em;
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: larger;
+}
+
+.remember {
+  color: #2989cc;
+  font-family: monospace;
+  font-size: large;
+}
+
+.remButton {
+  color: #2989cc;
+  font-family: "Copperplate";
+  font-size: medium;
+}
+
 [class*="col-"] {
   float: left;
   padding: 1px;
@@ -158,7 +187,7 @@ form {
 }
 
 .header {
-  margin-left: 5vw;
+  margin-left: 3vw;
   margin-right: auto;
   width: 15vw;
 }
