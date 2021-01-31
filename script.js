@@ -1,5 +1,6 @@
 const questionContainerElement = document.getElementById('question-container')
-
+const firstButtonElement = document.getElementById('first-button')
+const firstEntry = document.getElementById("important")
 
 
     function checkPswd() {
@@ -9,6 +10,8 @@ const questionContainerElement = document.getElementById('question-container')
         new_thing = document.createTextNode(password);
         node.appendChild(new_thing);
         questionContainerElement.appendChild(node);
+        firstButtonElement.classList.add('hide')
+        firstEntry.classList.add('hide')
     }
 
 function getCookie(cname) {
@@ -38,7 +41,10 @@ function checkCookie() {
   var user = getCookie("username");
   if (user != "") {
         cookie_creation = document.createTextNode(user);
+        var node = document.createElement("LI");
         node.appendChild(cookie_creation);
         questionContainerElement.appendChild(node);
+        firstButtonElement.classList.add('hide')
+        firstEntry.classList.add('hide')
   }
 }
