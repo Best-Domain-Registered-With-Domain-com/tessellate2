@@ -10,7 +10,7 @@
     <title>Tessellate</title>
   </head>
 
-  <body onload="checkCookie()">
+  <body onload="checkAllCookies()">
     <div class="row">
       <div class="col-2">
         <header class="header">
@@ -58,6 +58,8 @@
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
         </div>
+
+        <!-- First remembrance -->
         <p class="divider"></p>
         <div class="container">
           Type in the name of someone who is important to you, then click
@@ -67,19 +69,71 @@
               <label for="fname"></label>
               <input
                 type="text"
-                id="important"
+                id="important1"
                 name="important"
                 placeholder="Someone important"
               />
               <input
                 type="button"
                 id="first-button"
+                class="remButton"
                 value="Remember"
-                onclick="checkPswd();"
+                onclick="checkPswd(1);"
               />
             </form>
           </div>
-          <div id="question-container"></div>
+          <div id="question-container1"></div>
+        </div>
+
+        <!-- Second remembrance -->
+        <p class="divider"></p>
+        <div class="container">
+          Type in the name of someone who is important to you, then click
+          Remember.
+          <div>
+            <form>
+              <label for="fname"></label>
+              <input
+                type="text"
+                id="important2"
+                name="important"
+                placeholder="Someone important"
+              />
+              <input
+                type="button"
+                id="second-button"
+                class="remButton"
+                value="Remember"
+                onclick="checkPswd(2);"
+              />
+            </form>
+          </div>
+          <div id="question-container2"></div>
+        </div>
+        <!-- Third remembrance -->
+        <p class="divider"></p>
+        <div class="container">
+          Type in the name of someone who is important to you, then click
+          Remember.
+          <div>
+            <form>
+              <label for="fname"></label>
+              <input
+                type="text"
+                id="important3"
+                name="important"
+                placeholder="Someone important"
+              />
+              <input
+                type="button"
+                id="third-button"
+                class="remButton"
+                value="Remember"
+                onclick="checkPswd(3);"
+              />
+            </form>
+          </div>
+          <div id="question-container3"></div>
         </div>
       </div>
       <div class="col-1"></div>
