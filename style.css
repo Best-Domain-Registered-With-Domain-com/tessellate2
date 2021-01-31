@@ -249,7 +249,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 200px;
+  top: 150px;
   width: auto;
   padding: 16px;
   margin-top: 0px;
@@ -270,7 +270,7 @@ img {
 /* On hover, add a grey background color */
 .prev:hover,
 .next:hover {
-  background-color: #f1f1f1;
+  background-color: #14a1de9c;
   color: black;
 }
 
@@ -306,7 +306,8 @@ img {
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 1;
+  background-color: #ffffff25;
 }
 
 .container:hover .middle {
