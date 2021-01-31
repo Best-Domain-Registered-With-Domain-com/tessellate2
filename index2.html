@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link href="style.css" rel="stylesheet" />
+    <title>Tessellate</title>
+  </head>
+  <body onload="checkCookie()">
+      <header>
+        <img src="logos/logo-blue.png" alt="logo" style="width:200px;height:200px;" class="inline"/>
+        <h1 class="main-title"><a href="index.html">Tessellate</a></h1>
+        <p class="site-description" itemprop="description">Meaningfulness</p>
+      </header>
+      
+      
+      <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Have you reached out to someone close to you today?</h2>
+                                <h4>It won't be as awkward as you think</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Have you been on your computer for a while?</h2>
+                                <h4>Try taking a break, especially if it's almost time to hit the hay</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>$GME TO THE MOON</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-t="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href=#mycarousel role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href=#mycarousel role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        Put in what is most meaningful to you, then click submit. (V1.1)<br></br>
+        <div>
+        <form>
+          <label for="fname">Something important:</label>
+          <input type="text" id="important" name="important"><br></br>
+          <input type='button' id="first-button" value="click me" onclick="checkPswd();">
+        </form>
+        </div>
+        <div id="question-container"></div>
+      </div>
+      
+      <ul>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="time-capsule.html">Time Capsule</a>
+        </li>
+      </ul>
+
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" class="add-contact">Add a Contact!</button>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#mycarousel').carousel({ interval: 12000 });
+          $('#carouselButton').click(function() {
+              if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+                  $('#mycarousel').carousel('pause');
+                  $('#carouselButton').children('span').removeClass('fa-pause');
+                  $('#carouselButton').children('span').addClass('fa-play');
+              }
+              else if ($('#carouselButton').children('span').hasClass('fa-play')) {
+                  $('#mycarousel').carousel('cycle');
+                  $('#carouselButton').children('span').removeClass('fa-play');
+                  $('#carouselButton').children('span').addClass('fa-pause');
+              }
+          });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
